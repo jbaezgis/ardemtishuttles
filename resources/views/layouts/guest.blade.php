@@ -7,7 +7,7 @@
 
         <link rel="icon" href="{{asset('images/icon.png')}}" type="image/png">
 
-        <title>@yield('title')</title>
+        <title>@yield('title') - Ardemti</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="@yield('description')">
         <meta name="keywords" content="@yield('keywords')">
@@ -33,6 +33,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 
     </head>
     <body class="font-sans antialiased bg-white">
@@ -59,33 +60,26 @@
             </main>
         </div>
 
-        {{-- <footer class="border-t bg-white py-4">
-            <div class="text-xl text-center font-courgette text-gray-700">
-                Sabor y calidad en cada bocado!
-            </div>
-            <div class="py-2">
-                <div class="max-w-7xl mx-auto flex justify-center px-2 gap-6">
-                    <div class="flex gap-2">
-                        <div>
-                            <img class="h-6" src="{{ asset('images/iconos/whatsapp.png') }}" alt="">
-                        </div>
-                        <div>
-                            849-656-6119
-                        </div>
-                    </div>
-                    <div class="flex gap-2">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
-                              </svg>
-                        </div>
-                        <div>
-                            ardemti@gmail.com
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> --}}
+        
+        <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {{ now()->year }} Ardemti. {{ __('All Rights Reserved') }}.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6 ">{{ __('About') }}</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">{{ __('Privacy Policy') }}</a>
+                </li>
+                <li>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">{{ __('Licensing') }}</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline">{{ __('Contact') }}</a>
+                </li>
+            </ul>
+        </footer>
+
 
         @stack('modals')
 

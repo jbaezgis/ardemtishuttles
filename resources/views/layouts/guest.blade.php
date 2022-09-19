@@ -33,6 +33,7 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <wireui:scripts />
         <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 
     </head>
@@ -72,10 +73,10 @@
                     <a href="#" class="mr-4 hover:underline md:mr-6">{{ __('Privacy Policy') }}</a>
                 </li>
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6">{{ __('Licensing') }}</a>
+                    <a href="#" class="mr-4 hover:underline md:mr-6">{{ __('Terms & Conditions') }}</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline">{{ __('Contact') }}</a>
+                    <a href="#" class="hover:underline">{{ __('Cookies') }}</a>
                 </li>
             </ul>
         </footer>

@@ -21,14 +21,19 @@
             </div> --}}
 
             {{-- WhatsApp booking --}}
-            <div class="py-10 bg-green-100 rounded mb-4">
-                <div class="flex justify-center"><img class="h-12" src="{{ asset('images/icons/whatsapp.png') }}" alt=""></div>
-                    <div class="text-center py-4">
-                        {{ __('Save rides') }}
-                    </div>
-                    <div class="text-gray-500 text-sm text-center">
-                        Texto de prueba
-                    </div>
+            <div class="py-10 bg-green-50 rounded mb-4">
+                <div class="text-center py-4 text-2xl">
+                    {{ __('Has tu reserva via WhatsApp') }}
+                </div>
+                <div class="text-gray-500 text-center">
+                    Texto de prueba
+                </div>
+                <div class="flex justify-center mt-4">
+                    <a href="#" class="text-white text-lg bg-[#4bae4f] hover:bg-[#4bae4f]/90 focus:ring-4 focus:outline-none focus:ring-[#4bae4f]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
+                        <img class="h-6 mr-2" src="{{ asset('images/icons/whatsapp-2.png') }}" alt="">
+                        Book Now
+                    </a>
+                </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
@@ -115,12 +120,11 @@
                 <div class="text-gray-500 text-center">
                     {{ __('If you need any help you can contact us through our WhatsApp channel.') }}
                 </div>
-                <div class="text-center py-4">
-                    +1 (849) 656-6119
-                </div>
-
-                <div class="flex justify-center">
-                    <x-button outline secondary label="Click Here" />
+                <div class="flex justify-center mt-4">
+                    <a href="#" class="text-text-gray-700 bg-gray-200 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+                        <img class="h-6 mr-2" src="{{ asset('images/icons/whatsapp-flat.png') }}" alt="">
+                        Chat Now
+                    </a>
                 </div>
             </div>
            

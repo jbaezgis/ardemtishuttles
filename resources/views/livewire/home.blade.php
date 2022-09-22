@@ -4,11 +4,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <div class="py-5 bg-gray-50 my-5 rounded px-4">
-                <div class="pb-6">
-                    <div class="text-3xl">
+                <div class="pb-6 text-center">
+                    <div class="text-2xl md:text-3xl text-gray-700">
                         Reliable, low cost airport transfers
                     </div>
-                    <div>
+                    <div class="text-sm md:text-lg text-gray-500">
                         Book a private transfer or shared shuttle at over 500 airports, stations and ports worldwide
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                         </div>
                     </div>
 
-                    <div class="grid grid-cols-2 mt-2 lg:col-span-3 md:mr-2 md:grid-cols-5 md:mt-2 lg:mt-0">
+                    <div class="grid grid-cols-2 mt-2 lg:col-span-3 md:grid-cols-5 md:mt-2 lg:mt-0">
                         <div class="mr-2 md:col-span-2">
                             <x-datetime-picker
                                 {{-- label="Appointment Date" --}}
@@ -71,7 +71,7 @@
 
                         </div>
                         <div class="col-span-2 mt-4 md:mt-0 md:col-span-1">
-                            <button type="button" class="w-full text-white bg-blue-600 hover:bg-blue-700 border border-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center justify-center mr-2 mb-2">
+                            <button type="button" class="w-full text-white bg-blue-600 hover:bg-blue-700 border border-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2 inline-flex items-center justify-center mb-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                                 </svg>   
@@ -101,19 +101,14 @@
                 {{ __('Ardemti has been serving the tourist industry in the Dominican Republic since 2010. We are proud of our exceptional safety record and our highly acclaimed services.') }}
             </div> --}}
 
-            {{-- WhatsApp booking --}}
-            <div class="py-10 bg-green-50 rounded mb-4">
-                <div class="text-center py-4 text-2xl text-gray-600">
-                    {{ __('Has tu reserva via WhatsApp') }}
-                </div>
-                <div class="text-gray-500 text-center">
-                    Texto de prueba
-                </div>
-                <div class="flex justify-center mt-4">
-                    <a href="#" class="text-white text-lg bg-[#4bae4f] hover:bg-[#4bae4f]/90 focus:ring-4 focus:outline-none focus:ring-[#4bae4f]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
-                        <img class="h-6 mr-2" src="{{ asset('images/icons/whatsapp-2.png') }}" alt="">
-                        Book Now
-                    </a>
+            <div class="mb-4">
+                <div class="items-center lg:flex bg-green-50 rounded-lg justify-center">
+                    <div class="flex justify-center sm:pt-4 lg:pt-0">
+                        <img class="h-10" src="{{ asset('images/icons/shield-green.png') }}" alt="Shield">
+                    </div>
+                    <div class="text-center py-4 px-4 text-sm lg:text-lg text-green-600">
+                        {{ __('For your safety and comfort, all our drivers and vehicles are following World Health Organization guidelines.') }}
+                    </div>
                 </div>
             </div>
             
@@ -198,9 +193,10 @@
                 <div class="text-gray-500 text-center">
                     {{ __('If you need any help you can contact us through our WhatsApp channel.') }}
                 </div>
+                
                 <div class="flex justify-center mt-4">
-                    <a href="#" class="text-text-gray-700 bg-gray-200 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
-                        <img class="h-6 mr-2" src="{{ asset('images/icons/whatsapp-flat.png') }}" alt="">
+                    <a href="#" class="text-white text-sm bg-[#4bae4f] hover:bg-[#4bae4f]/90 focus:ring-4 focus:outline-none focus:ring-[#4bae4f]/50 font-medium rounded-lg px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2">
+                        <img class="h-6 mr-2" src="{{ asset('images/icons/whatsapp-2.png') }}" alt="">
                         Chat Now
                     </a>
                 </div>

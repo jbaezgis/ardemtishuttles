@@ -8,6 +8,6 @@ class BookingSearch extends Component
 {
     public function render()
     {
-        return view('livewire.booking-search')->layout('layouts.guest')s;
+        return view('livewire.booking-search')->layout('layouts.guest');
     }
 }

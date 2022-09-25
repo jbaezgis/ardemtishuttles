@@ -17,7 +17,7 @@
         <meta property="og:url" content="https://pellerano.com" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="{{ app()->getLocale() }}" />
-        <meta property="og:locale:alternate" content="es_ES" />
+        <meta property="og:locale:alternate" content="en_EN" />
         <meta property="og:site_name" content="Pellerano" />
         <meta property="og:image" content="{{asset('images/cover-image.png')}}" />
         <meta property="og:image:url" content="{{asset('images/cover-image.png')}}" />
@@ -67,7 +67,7 @@
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 ">{{ __('About') }}</a>
+                    <a href="{{ route('about') }}" class="mr-4 hover:underline md:mr-6 ">{{ __('About') }}</a>
                 </li>
                 <li>
                     <a href="#" class="mr-4 hover:underline md:mr-6">{{ __('Privacy Policy') }}</a>

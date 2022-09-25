@@ -1,7 +1,7 @@
 @section('title', __('Home'))
 <div>
     <div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
 
             <div class="py-5 bg-gray-50 my-5 rounded px-4">
                 <div class="pb-6 text-center">
@@ -53,7 +53,7 @@
                         </div>
     
                         <div class="md:col-span-2 md:mr-2">
-                            <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="w-full border shadow text-gray-400 bg-white border-gray-300 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md px-3 py-2 text-center inline-flex items-center justify-between md:text-sm" type="button">1 {{ __('Passengers') }} <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+                            <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="w-full border shadow text-secondary-600 bg-white border-secondary-400 hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md px-3 py-2 text-center inline-flex items-center justify-between" type="button">1 {{ __('Passengers') }} <svg class="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
                             <!-- Dropdown menu -->
                             <div id="dropdown" class="hidden z-10 w-80 bg-white rounded divide-y divide-gray-100 shadow lg:w-48" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(0px, 335.5px, 0px);">
                                 <div class="p-4">

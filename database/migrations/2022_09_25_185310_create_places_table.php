@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('places', function (Blueprint $table) {
             $table->id();
+            $table->integer('province_id')->nullable();
+            $table->integer('municipality_id')->nullable();
+            $table->string('name')->nullable();
+            $table->string('slug')->nullable();
+            $table->decimal('long', 10, 7);
+            $table->decimal('lat', 10, 7);
             $table->timestamps();
         });
     }

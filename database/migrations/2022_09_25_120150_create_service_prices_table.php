@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('service_prices', function (Blueprint $table) {
             $table->id();
+            $table->integer('service_id')->nullable();
+            $table->integer('service_price_id')->nullable();
+            $table->float('price', 8, 2)->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

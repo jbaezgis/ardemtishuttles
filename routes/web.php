@@ -4,8 +4,6 @@ use App\Http\Livewire\About;
 use App\Http\Livewire\Cookies;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Home;
-use App\Http\Livewire\Padron;
-use App\Http\Livewire\Usuarios;
 use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\Help;
 use App\Http\Livewire\PrivacyPolicy;
@@ -26,7 +24,7 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'),'verified'])
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
 
     // Administration
-    Route::get('/usuarios', Usuarios::class)->name('usuarios');
+    // Route::get('/usuarios', Usuarios::class)->name('usuarios');
 });
 
 // Suppliers routes

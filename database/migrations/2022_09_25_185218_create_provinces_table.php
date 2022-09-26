@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('provinces', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable();
+            $table->string('slug')->nullable();
+            $table->decimal('long', 10, 7);
+            $table->decimal('lat', 10, 7);
             $table->timestamps();
         });
     }

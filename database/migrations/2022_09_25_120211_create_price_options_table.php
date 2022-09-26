@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('price_options', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable();
+            $table->string('max_passengers')->nullable();
             $table->timestamps();
         });
     }

@@ -108,8 +108,10 @@
                         {{ __('Login') }}
                     </x-jet-responsive-nav-link>
                 @endguest
+
                 @auth
                 <div class="">
+                    {{-- Admin dropdown menu --}}
                     <x-jet-dropdown align="right" width="60">
                         <x-slot name="trigger">
                             <span class="inline-flex rounded-md">
@@ -167,6 +169,7 @@
                             </div>
                         </x-slot>
                     </x-jet-dropdown>
+
                 </div>
                     <div class="ml-3 relative">
                         <x-jet-dropdown align="right" width="48">

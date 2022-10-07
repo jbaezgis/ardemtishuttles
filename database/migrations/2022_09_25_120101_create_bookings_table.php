@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->integer('service_id')->nullable();
             $table->integer('service_price_id')->nullable();
+            $table->integer('user_id')->nullable();
             $table->string('type')->nullable();
             $table->integer('from')->nullable();
             $table->integer('to')->nullable();
@@ -45,6 +46,7 @@ return new class extends Migration
             $table->string('balance_amount')->nullable();
             $table->string('balance_payment_method')->nullable();
             $table->boolean('email_sent')->default(0);
+            $table->boolean('complete')->default(0);
             $table->timestamps();
         });
     }

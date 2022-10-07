@@ -29,6 +29,7 @@
         @livewireStyles
 
         <!-- Scripts -->
+        <wireui:scripts />
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
     </head>
@@ -52,6 +53,20 @@
                 {{ $slot }}
             </main>
         </div>
+        <footer class="p-4 bg-white md:flex md:items-center md:justify-between md:px-6 md:py-2 border-t">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Ardemti Administration.
+            </span>
+            <span class="text-sm text-gray-600">
+                Version 1.0.0.1
+            </span>
+            <span class="text-sm text-gray-600">
+                <a href="https://yoelbaez.com" target="_blank">
+                    <img class="h-8" src="{{ asset('images/yoelbaez.png') }}" alt="{{ __('Developed by: Yoel Baez') }}">
+                </a>
+            </span>
+
+            
+        </footer>
 
         @stack('modals')
 

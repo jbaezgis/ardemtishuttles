@@ -13,15 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('municipalities', function (Blueprint $table) {
+        Schema::create('images', function (Blueprint $table) {
             $table->id();
-            $table->integer('province_id')->nullable();
-            $table->string('image')->nullable();
-            $table->string('name')->nullable();
-            $table->string('slug')->nullable();
-            $table->text('description')->nullable();
-            $table->decimal('long', 10, 7);
-            $table->decimal('lat', 10, 7);
+            $table->string('title')->nullable();
+            $table->string('src')->nullable();
+            $table->string('mime_type')->nullable();
+            $table->string('alt')->nullable();
             $table->timestamps();
         });
     }
@@ -33,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('municipalities');
+        Schema::dropIfExists('images');
     }
 };

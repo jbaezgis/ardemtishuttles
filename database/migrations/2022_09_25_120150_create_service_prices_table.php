@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('service_id')->nullable();
             $table->integer('service_price_id')->nullable();
             $table->float('price', 8, 2)->nullable();
+            $table->float('cost', 8, 2)->nullable();
             $table->string('status')->nullable();
             $table->timestamps();
         });

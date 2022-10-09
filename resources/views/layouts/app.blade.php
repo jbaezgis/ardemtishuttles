@@ -70,6 +70,7 @@
 
         @stack('modals')
 
+        <script type="text/javascript" src="{{ asset('js/gmap.js') }}"></script>
         @livewireScripts
     </body>
 </html>

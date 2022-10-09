@@ -38,8 +38,8 @@ class Municipalities extends Component
             'province_id' => 'required',
             'name' => 'required',
             // 'slug' => 'required',
-            'long' => 'required',
-            'lat' => 'required',
+            // 'long' => 'required',
+            // 'lat' => 'required',
         ];
     }
 

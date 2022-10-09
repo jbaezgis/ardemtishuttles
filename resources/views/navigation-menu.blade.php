@@ -31,19 +31,19 @@
                     @endguest
                     
                     @auth
-                        <x-jet-nav-link href="{{ url('dashboard') }}" :active="request()->is('dashboard')">
+                        <x-jet-nav-link href="{{ url('admin') }}" :active="request()->is('admin')">
                             {{ __('Dashboard') }}
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link href="{{ url('orders') }}" :active="request()->is('orders')">
+                        <x-jet-nav-link href="{{ url('bookings') }}" :active="request()->is('bookings')">
                             {{ __('Bookings') }}
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link href="{{ url('clients') }}" :active="request()->is('clients')">
+                        <x-jet-nav-link href="{{ url('calendar') }}" :active="request()->is('calendar')">
                             {{ __('Calendar') }}
                         </x-jet-nav-link>
 
-                        <x-jet-nav-link href="{{ url('clients') }}" :active="request()->is('clients')">
+                        <x-jet-nav-link href="{{ url('accounting') }}" :active="request()->is('accounting')">
                             {{ __('Accounting') }}
                         </x-jet-nav-link>
                     @endauth
@@ -142,7 +142,7 @@
                                 <x-jet-dropdown-link href="{{ url('admin/municipalities') }}" class="{{ request()->routeIs('admin.municipalities') ? 'text-gray-700 bg-gray-200' : '' }}">
                                     {{ __('Municipalities') }}
                                 </x-jet-dropdown-link>
-                                <x-jet-dropdown-link href="{{ url('suppliers') }}" class="{{ request()->routeIs('suppliers*') ? 'text-gray-700 bg-gray-200' : '' }}">
+                                <x-jet-dropdown-link href="{{ url('admin/places') }}" class="{{ request()->routeIs('admin.places*') ? 'text-gray-700 bg-gray-200' : '' }}">
                                     {{ __('Places') }}
                                 </x-jet-dropdown-link>
 

@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
             $table->integer('service_id')->nullable();
             $table->integer('service_price_id')->nullable();
-            $table->integer('user_id')->nullable();
+            $table->integer('driver_id')->nullable();
+            $table->integer('client_id')->nullable();
             $table->string('type')->nullable();
             $table->integer('from')->nullable();
             $table->integer('to')->nullable();
@@ -29,7 +30,6 @@ return new class extends Migration
             $table->integer('adults')->nullable();
             $table->integer('children')->nullable();
             $table->integer('infants')->nullable();
-            $table->string('status')->nullable();
             $table->date('date')->nullable();
             $table->time('time')->nullable();
             $table->integer('want_to_arrive')->nullable();
@@ -46,7 +46,9 @@ return new class extends Migration
             $table->string('balance_amount')->nullable();
             $table->string('balance_payment_method')->nullable();
             $table->boolean('email_sent')->default(0);
-            $table->boolean('complete')->default(0);
+            $table->string('device')->nullable();
+            $table->string('status')->nullable();
+            $table->integer('created_by')->nullable();
             $table->timestamps();
         });
     }

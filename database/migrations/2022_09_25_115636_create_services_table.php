@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('type')->nullable();
             $table->integer('driving_time')->nullable();
             $table->string('status')->nullable();
+            $table->integer('booked')->nullable();
             $table->timestamps();
         });
     }

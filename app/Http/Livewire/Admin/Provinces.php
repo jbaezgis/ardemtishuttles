@@ -33,8 +33,8 @@ class Provinces extends Component
         return [
             'name' => 'required',
             // 'description' => 'required',
-            'long' => 'required',
-            'lat' => 'required',
+            // 'long' => 'required',
+            // 'lat' => 'required',
         ];
     }
 
@@ -70,7 +70,7 @@ class Provinces extends Component
     {
         return [
             'name' => $this->name,
-            'slug' => $this->slug,
+            'slug' => Str::slug($this->name, '-'),
             'description' => $this->description,
             'long' => $this->long,
             'lat' => $this->lat,

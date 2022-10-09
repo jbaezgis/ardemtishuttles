@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('slug')->nullable();
             $table->text('description')->nullable();
-            $table->decimal('long', 10, 7);
-            $table->decimal('lat', 10, 7);
+            $table->decimal('long', 10, 7)->nullable();
+            $table->decimal('lat', 10, 7)->nullable();
             $table->timestamps();
         });
     }

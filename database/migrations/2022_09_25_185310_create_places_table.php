@@ -25,6 +25,7 @@ return new class extends Migration
             $table->decimal('long', 10, 7)->nullable();
             $table->decimal('lat', 10, 7)->nullable();
             $table->integer('visited')->nullable();
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }

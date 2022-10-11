@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->id();
+            $table->string('module')->nullable();
+            $table->integer('module_id')->nullable();
             $table->string('title')->nullable();
             $table->string('src')->nullable();
             $table->string('mime_type')->nullable();

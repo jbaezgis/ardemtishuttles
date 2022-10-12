@@ -2,8 +2,11 @@
 <div>
     <div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
-
-            <div class="py-5 bg-gray-50 my-5 rounded px-4">
+            <div class="py-10 flex justify-center">
+                <div><img src="{{ asset('images/under-construction.png') }}" alt=""></div>
+            </div>
+            <div class="text-4xl text-center text-gray-600 font-medium">COMING SOON</div>
+            {{-- <div class="py-5 bg-gray-50 my-5 rounded px-4">
                 <div class="pb-6 text-center">
                     <div class="text-2xl md:text-3xl text-gray-700">
                         Reliable, low cost airport transfers
@@ -17,7 +20,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 col-span-3 md:mr-0 lg:mr-2">
                         <div class="md:mr-2">
                             <x-select
-                                {{-- label="Select Status" --}}
+
                                 placeholder="From - Pick up location"
                                 wire:model.defer="model"
                             >
@@ -30,7 +33,7 @@
         
                         <div class="mt-2 md:mt-0">
                             <x-select
-                                {{-- label="Select Status" --}}
+
                                 placeholder="To - Drop off location"
                                 wire:model.defer="model"
                             >
@@ -46,7 +49,7 @@
                     <div class="grid grid-cols-2 mt-2 lg:col-span-3 md:grid-cols-5 md:mt-2 lg:mt-0">
                         <div class="mr-2 md:col-span-2">
                             <x-datetime-picker
-                                {{-- label="Appointment Date" --}}
+
                                 placeholder="Arrival Date"
                                 wire:model.defer="normalPicker"
                             />
@@ -84,7 +87,7 @@
                 </div>
             </div>
             
-            {{-- <div class="p-4 mt-8 bg-blue-500">
+            <div class="p-4 mt-8 bg-blue-500">
                 <div>
                     <h1 class="text-xl text-white">{{ __('PRIVATE TRANSFER SERVICES') }}</h1>
                 </div>
@@ -99,7 +102,7 @@
     
             <div class="text-center px-4 py-6 text-lg font-semibold text-gray-700">
                 {{ __('Ardemti has been serving the tourist industry in the Dominican Republic since 2010. We are proud of our exceptional safety record and our highly acclaimed services.') }}
-            </div> --}}
+            </div>
 
             <div class="mb-4">
                 <div class="items-center lg:flex bg-green-50 rounded-lg justify-center">
@@ -200,7 +203,7 @@
                         Chat Now
                     </a>
                 </div>
-            </div>  
+            </div>   --}}
         </div>
     </div>
 

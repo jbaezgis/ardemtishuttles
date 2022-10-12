@@ -37,7 +37,7 @@
         <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
 
     </head>
-    <body class="font-sans antialiased bg-white">
+    <body class="font-sans antialiased bg-[#f7f7f7]">
         {{-- <div class="flex justify-center py-4">
             <img class="h-32" src="{{ asset('images/logo-circle.png') }}" alt="Ardenti Logo">
         </div> --}}
@@ -62,7 +62,7 @@
         </div>
 
         
-        <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 border-t">
+        {{-- <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 border-t">
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {{ now()->year }} Ardemti. {{ __('All Rights Reserved') }}.
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
@@ -79,7 +79,7 @@
                     <a href="#" class="hover:underline">{{ __('Cookies') }}</a>
                 </li>
             </ul>
-        </footer>
+        </footer> --}}
 
 
         @stack('modals')

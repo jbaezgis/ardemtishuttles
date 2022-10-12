@@ -64,8 +64,6 @@
                     <img class="h-8" src="{{ asset('images/yoelbaez.png') }}" alt="{{ __('Developed by: Yoel Baez') }}">
                 </a>
             </span>
-
-            
         </footer>
 
         @stack('modals')

@@ -15,11 +15,11 @@
 
         <meta property="og:description" content="@yield('description')" />
         <meta property="og:title" content="@yield('title')" />
-        <meta property="og:url" content="https://pellerano.com" />
+        <meta property="og:url" content="https://ardemti.com" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="{{ app()->getLocale() }}" />
         <meta property="og:locale:alternate" content="es_ES" />
-        <meta property="og:site_name" content="Pellerano" />
+        <meta property="og:site_name" content="ardemti" />
         <meta property="og:image" content="@yield('og-image')" />
         <meta property="og:image:url" content="@yield('og-image-url')" />
 

@@ -8,7 +8,7 @@
         <link rel="icon" href="{{asset('images/icon.png')}}" type="image/png">
         <link rel="apple-touch-icon" sizes="180x180" href="{{asset('images/logo-cuadrado.png')}}">
 
-        <title>@yield('title')</title>
+        <title>@yield('title') - ardemti</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="@yield('description')">
         <meta name="keywords" content="@yield('keywords')">

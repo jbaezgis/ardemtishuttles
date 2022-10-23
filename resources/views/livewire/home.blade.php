@@ -2,11 +2,7 @@
 <div>
     <div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
-            <div class="py-10 flex justify-center">
-                <div><img src="{{ asset('images/under-construction.png') }}" alt=""></div>
-            </div>
-            <div class="text-4xl text-center text-gray-600 font-medium">COMING SOON</div>
-            {{-- <div class="py-5 bg-gray-50 my-5 rounded px-4">
+            <div class="py-5 bg-gray-50 my-5 rounded px-4">
                 <div class="pb-6 text-center">
                     <div class="text-2xl md:text-3xl text-gray-700">
                         Reliable, low cost airport transfers
@@ -87,7 +83,7 @@
                 </div>
             </div>
             
-            <div class="p-4 mt-8 bg-blue-500">
+            {{-- <div class="p-4 mt-8 bg-blue-500">
                 <div>
                     <h1 class="text-xl text-white">{{ __('PRIVATE TRANSFER SERVICES') }}</h1>
                 </div>
@@ -98,11 +94,11 @@
                     <div class="text-5xl text-yellow-300 font-extrabold">20 {{ __('YEARS') }}</div>
                     <div class="text-white">{{ __('serving tourist, 100% price guarantee') }}</div>
                 </div>
-            </div>
+            </div> --}}
     
-            <div class="text-center px-4 py-6 text-lg font-semibold text-gray-700">
+            {{-- <div class="text-center px-4 py-6 text-lg font-semibold text-gray-700">
                 {{ __('Ardemti has been serving the tourist industry in the Dominican Republic since 2010. We are proud of our exceptional safety record and our highly acclaimed services.') }}
-            </div>
+            </div> --}}
 
             <div class="mb-4">
                 <div class="items-center lg:flex bg-green-50 rounded-lg justify-center">
@@ -203,7 +199,7 @@
                         Chat Now
                     </a>
                 </div>
-            </div>   --}}
+            </div>  
         </div>
     </div>
 

@@ -5,7 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <link rel="icon" href="{{asset('images/icon.png')}}" type="image/png">
+        <link rel="icon" href="{{asset('images/icon.png')}}" sizes="16x16" type="image/png">
+        <link rel="icon" href="{{asset('images/icon.png')}}" sizes="32x32" type="image/png">
+        <link rel="icon" href="{{asset('images/icon.png')}}" sizes="96x96" type="image/png">
+        <link rel="icon" href="{{asset('images/icon.png')}}" sizes="180x180" type="image/png">
+
+        <link rel="apple-touch-icon" href="{{asset('images/logo-cuadrado.png')}}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{asset('images/logo-cuadrado.png')}}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{asset('images/logo-cuadrado.png')}}">
         <link rel="apple-touch-icon" sizes="180x180" href="{{asset('images/logo-cuadrado.png')}}">
 
         <title>@yield('title') - ardemti</title>
